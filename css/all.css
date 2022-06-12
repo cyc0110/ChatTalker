@@ -1,0 +1,710 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+}
+
+sub {
+  font-size: 0.75rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+  padding-bottom: 1rem;
+}
+
+.btn {
+  border: none;
+}
+
+.btn-lg {
+  width: 136px;
+  height: 49px;
+  border-radius: 25px;
+}
+
+.btn-md {
+  width: 128px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.btn-primary {
+  background-color: #FF5D50;
+}
+
+.btn-primary:hover {
+  background-color: #ff7e74;
+}
+
+.btn-secondary {
+  background-color: #56C4C5;
+}
+
+.btn-secondary:hover {
+  background-color: #71cdce;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2% 0 4%;
+}
+
+.v-wrap {
+  margin: 2% 0 4%;
+}
+
+.goTop {
+  position: fixed;
+  z-index: 1000;
+  bottom: 2%;
+  right: 2%;
+}
+
+.goTop button {
+  font-weight: 700;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: block;
+  color: #fff;
+  background-color: #56C4C5;
+  border: none;
+}
+
+.bg-irShape {
+  z-index: -100;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.scroll {
+  z-index: 999;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.h-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 100;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.logo {
+  width: 218px;
+  height: 40px;
+}
+
+.kv {
+  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 28%;
+}
+
+.block {
+  width: 50%;
+}
+
+.kvBlock {
+  padding: 2%;
+}
+
+.keywords {
+  color: #56C4C5;
+  font-size: 1.125rem;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1.25;
+  margin: 1% 0;
+}
+
+.cardList {
+  width: 33.3333%;
+  padding: 2%;
+}
+
+.cardList .titleName {
+  padding: 1.5rem 0;
+}
+
+.cardList p {
+  color: #747474;
+}
+
+.socialItem {
+  width: 90px;
+  height: 90px;
+  border-radius: 0;
+}
+
+.service h2 {
+  padding-bottom: 1rem;
+}
+
+.castList {
+  margin: 2% 0;
+  width: calc(25% - 16px);
+  border-radius: 12px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.castTxt {
+  margin: 1rem 1rem 1.5rem;
+}
+
+.castName {
+  padding-bottom: 1rem;
+  color: #56C4C5;
+}
+
+.programBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2%;
+  text-align: left;
+}
+
+.program {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.programTxt {
+  padding-left: 8%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.programTxt h3 {
+  font-size: 1.75rem;
+}
+
+.programTxt p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.programList {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(50% - 16px);
+  margin-bottom: 16px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem 2rem 3rem;
+}
+
+.ic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.programTitle {
+  padding: 1.5rem 0 1rem;
+}
+
+.swiper {
+  margin-top: 12%;
+  margin-bottom: 1%;
+}
+
+.commentList {
+  width: calc(33.33333% - 16px);
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: left;
+  padding: 2% 3%;
+}
+
+.commentList .castName {
+  padding-bottom: 1%;
+}
+
+.avator {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: -60px;
+  left: 16px;
+  background-size: cover;
+}
+
+.user1 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/user01.jpg);
+}
+
+.user2 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/user02.jpg);
+}
+
+.user3 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/user03.jpg);
+}
+
+.content {
+  border-bottom: solid 1px #DDDDDD;
+  padding: 8% 0 1rem;
+  margin-bottom: 8%;
+}
+
+.jobTitle {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+li.starItem {
+  width: 16px;
+  height: 16px;
+  border-radius: 0;
+  margin-left: 8px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg);
+  background-size: cover;
+}
+
+.slick-dots {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slick-dots li {
+  margin: 0 1%;
+}
+
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #DDDDDD;
+  border: none;
+}
+
+.programFee {
+  height: 503px;
+}
+
+.programFee h2 {
+  padding-top: 300px;
+  padding-bottom: 2%;
+}
+
+.bgCover {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.copyright {
+  background-color: #F5F5F5;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .block, .cardList, .castList, .program, .programTxt, .programList {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+  .programBlock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .programTxt {
+    padding-left: 0;
+    text-align: center;
+  }
+  .commentList {
+    width: 100%;
+    margin-bottom: 16%;
+  }
+  .programFee {
+    height: 461px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .castList {
+    width: 100%;
+  }
+}
+
+.selectBtn {
+  border-radius: 50px;
+  padding: 12px 2rem;
+  border: 1px solid #56C4C5;
+  color: #56C4C5;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #56C4C5;
+  --bs-btn-border-color: #56C4C5;
+  --bs-btn-hover-bg: #56C4C5;
+  --bs-btn-hover-border-color: #56C4C5;
+  --bs-btn-active-bg: #56C4C5;
+  --bs-btn-active-border-color: #56C4C5;
+  --bs-btn-disabled-color: #56C4C5;
+}
+
+.programHeader {
+  border-radius: 0 0 0 300px;
+  background-color: #F5F5F5;
+  margin-bottom: 16%;
+}
+
+.programKv {
+  padding-left: 60%;
+  height: 560px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.kvCover {
+  background-image: url(https://asz8621.github.io/chatTalker/images/banner.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+}
+
+.exempliText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 8%;
+}
+
+.perNumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.perNumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.perNumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.perNumber::-webkit-scrollbar {
+  display: none;
+}
+
+.numList {
+  padding: 1%;
+}
+
+.versionAll, .faqAll {
+  display: block;
+  margin: 2% 0 4%;
+}
+
+.version {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.versionItem {
+  width: 48%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.versionItem h2 {
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.versionItem .btn {
+  margin: 4% 0;
+}
+
+.classic {
+  padding: 2% 8%;
+}
+
+.calc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 4% 0 2%;
+}
+
+.calcBlock {
+  padding: 8%;
+  background-color: #F5F5F5;
+  border-radius: 12px;
+}
+
+.calcBlock h5 {
+  font-weight: 400;
+  font-size: 2rem;
+  padding-bottom: 0;
+}
+
+.userNum h5 {
+  color: #56C4C5;
+}
+
+.equal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+}
+
+.infoList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+  text-align: left;
+}
+
+.checkmark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 1rem;
+}
+
+.accordion {
+  margin-top: 4%;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.qaList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  margin-bottom: 2%;
+}
+
+.qaTitle {
+  font-size: 1.125rem;
+}
+
+@media screen and (max-width: 992px) {
+  .programKv {
+    height: 360px;
+  }
+  .versionItem {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+  .calc {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .perNumber {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .calcBlock h5 {
+    font-size: 1.45rem;
+  }
+  .calcBlock p {
+    font-size: 0.75rem;
+  }
+}
